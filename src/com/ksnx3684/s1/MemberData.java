@@ -1,4 +1,6 @@
 package com.ksnx3684.s1;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Scanner;
 
@@ -34,9 +36,20 @@ public class MemberData {
 		memberDTO.setEmail(sc.next());
 		System.out.println("전화번호를 입력하시오");
 		memberDTO.setPhone(sc.next());
-		System.out.println("생일을 입력하시오");
-		memberDTO.setBirthday(sc.next());
+		System.out.println("생일을 입력하시오 ex)20001224");
+		String s = sc.next();
+		int year = Integer.parseInt(s.substring(0, 4));
+		int month = Integer.parseInt(s.substring(4, 6));
+		int date = Integer.parseInt(s.substring(6));
 		
+		Calendar ca = Calendar.getInstance();
+		ca.set(year, month-1, date);
+		
+		String pattern = "yyyy년 MM월 dd일";
+		SimpleDateFormat sd = new SimpleDateFormat(pattern);
+		String r = sd.format(ca.getTime());
+		memberDTO.setBirthday(r);
+			
 		return memberDTO;
 	}
 	

@@ -1,5 +1,7 @@
 package com.ksnx3684.s1;
 
+import java.util.Calendar;
+
 public class MemberDTO {
 
 	private String name;

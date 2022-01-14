@@ -14,6 +14,7 @@ public class MemberView {
 			System.out.print(memberDTO.getEmail()+"\t");
 			System.out.print(memberDTO.getPhone()+"\t");
 			System.out.println(memberDTO.getBirthday());
+			// 2000년 12월 24일
 		} else {
 			System.out.println("정보가 없습니다.");
 		}

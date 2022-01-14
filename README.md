@@ -11,4 +11,6 @@
 	
 	- MemberMenu 클래스에 메뉴 출력 및 선택 메서드 생성
 	- MemberData 클래스에 명단의 정보를 입력하는 메서드 생성
-	- MemberData 클래스에 모든 명단을 출력하는 메서드 생성
+	- MemberView 클래스에 모든 명단을 출력하는 메서드 생성
+	- MemberData, MemberView 클래스에 특정 이름을 검색하여 출력하는 메서드 생성
+	- MemberData 클래스에 특정 이름의 정보를 삭제하는 메서드 생성
